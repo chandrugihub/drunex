@@ -147,16 +147,14 @@ function submitForm(event) {
   }
   
   // Create WhatsApp message without asterisks
-  const message = `Hello DRUNEX,
-
-New Project Inquiry:
+const message = `New Project Inquiry:
 
 Name: ${fullName}
 Phone: ${phone}
 Email: ${email}
 Project Type: ${projectType}
 Description: ${description}`;
-  
+
   // Encode message for URL
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/918525922839?text=${encodedMessage}`;
@@ -262,7 +260,6 @@ document.addEventListener('touchmove', function(e) {
       e.stopPropagation();
     }
   }
-
 }, { passive: false });
 
 // Update the openModal function in script.js
@@ -295,14 +292,14 @@ function submitForm(event) {
         return;
     }
     
-    // Create WhatsApp message
-    const message = `*New Project Inquiry*\n\n` +
-                   `*Name:* ${fullName}\n` +
-                   `*Phone:* ${phone}\n` +
-                   `*Email:* ${email}\n` +
-                   `*Project Type:* ${projectType}\n` +
-                   `*Description:* ${description}\n\n` +
-                   `_Sent via DRUNEX Website_`;
+// Create WhatsApp message
+const message = `*New Project Inquiry*\n\n` +
+               `*Name:* ${fullName}\n` +
+               `*Phone:* ${phone}\n` +
+               `*Email:* ${email}\n` +
+               `*Project Type:* ${projectType}\n` +
+               `*Description:* ${description}`;
+
     
     // Encode for URL
     const encodedMessage = encodeURIComponent(message);
@@ -334,3 +331,4 @@ function closeModal() {
         form.reset();
     }
 }
+
