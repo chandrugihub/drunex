@@ -262,4 +262,75 @@ document.addEventListener('touchmove', function(e) {
       e.stopPropagation();
     }
   }
+
 }, { passive: false });
+
+// Update the openModal function in script.js
+function openModal(serviceType = 'General Inquiry') {
+    const modal = document.getElementById('modal');
+    const projectTypeField = document.getElementById('projectType');
+    
+    // Set the selected service type
+    if (serviceType && projectTypeField) {
+        projectTypeField.value = serviceType;
+    }
+    
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+// Update the submitForm function to get value from select
+function submitForm(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const fullName = form.fullName.value.trim();
+    const phone = form.phone.value.trim();
+    const email = form.email.value.trim();
+    const projectType = form.projectType.value;
+    const description = form.description.value.trim();
+    
+    if (!fullName || !phone || !email || !projectType || !description) {
+        showToast('Please fill in all required fields', 'error');
+        return;
+    }
+    
+    // Create WhatsApp message
+    const message = `*New Project Inquiry*\n\n` +
+                   `*Name:* ${fullName}\n` +
+                   `*Phone:* ${phone}\n` +
+                   `*Email:* ${email}\n` +
+                   `*Project Type:* ${projectType}\n` +
+                   `*Description:* ${description}\n\n` +
+                   `_Sent via DRUNEX Website_`;
+    
+    // Encode for URL
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/918525922839?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappURL, '_blank');
+    
+    // Show success message
+    showToast('Opening WhatsApp...', 'success');
+    
+    // Close modal after delay
+    setTimeout(() => {
+        closeModal();
+        form.reset();
+    }, 1500);
+}
+
+// Function to reset form when modal closes
+function closeModal() {
+    const modal = document.getElementById('modal');
+    const form = document.getElementById('project-form');
+    
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    
+    // Reset form
+    if (form) {
+        form.reset();
+    }
+}
