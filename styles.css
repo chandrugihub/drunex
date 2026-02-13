@@ -291,3 +291,37 @@ select.input-field:invalid {
 select.input-field option[value=""][disabled] {
     color: rgba(255, 255, 255, 0.5);
 }
+
+
+
+
+   /* MARQUEE ANIMATION – smooth left-to-right infinite scroll */
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); } /* precisely half due to duplication */
+    }
+    .animate-marquee {
+        animation: marquee 25s linear infinite;
+        width: fit-content;
+        display: flex;
+        will-change: transform;
+    }
+    .animate-marquee:hover {
+        animation-play-state: paused; /* interactive pause */
+    }
+    
+    /* Icon enhancements – subtle glow for visibility on dark background */
+    .fa-html5, .fa-css3-alt, .fa-js, .fa-bootstrap, .fa-react, .fa-node, .fa-python, .fa-figma, .fa-database {
+        filter: drop-shadow(0 0 8px rgba(255,255,255,0.2));
+        transition: all 0.2s ease;
+    }
+    .animate-marquee div:hover i {
+        transform: scale(1.15);
+        filter: drop-shadow(0 0 12px currentColor);
+    }
+    
+    /* responsive gap adjustments */
+    @media (max-width: 640px) {
+        .gap-12 { gap: 2rem; }
+        .fa-3xl { font-size: 2rem; }
+    }
