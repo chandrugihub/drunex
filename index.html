@@ -38,7 +38,8 @@
                     <!-- Desktop Navigation -->
                     <div class="hidden md:flex items-center gap-8">
                         <a href="#hero" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Home</a>
-                        <a href="#why-us" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Why Us</a>
+                        <a href="#portfolio" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Portfolio</a>
+                        <a href="#pricing" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Pricing</a>
                         <a href="#services" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Services</a>
                         <a href="#about" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">About</a>
                         <a href="#contact" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
@@ -64,12 +65,13 @@
             <div id="mobile-menu" class="md:hidden hidden" style="background: rgba(20, 20, 24, 0.98);">
                 <div class="px-4 py-4 space-y-3">
                     <a href="#hero" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Home</a>
-                    <a href="#why-us" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Why Us</a>
+                    <a href="#portfolio" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Portfolio</a>
+                    <a href="#pricing" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Pricing</a>
                     <a href="#services" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Services</a>
                     <a href="#about" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">About</a>
                     <a href="#contact" onclick="closeMobileMenu()" class="block py-2 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Contact</a>
                     <button onclick="openModal('General Inquiry'); closeMobileMenu();" class="btn-primary w-full mt-4 px-5 py-3 rounded-full text-sm font-semibold text-black">
-                        Book Your Project
+                        Book Now
                     </button>
                 </div>
             </div>
@@ -102,7 +104,7 @@
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
-                            Book Your Project
+                            Book Now
                         </button>
                         <a href="#contact" class="btn-secondary w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2" style="color: #39ff14;">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,10 +118,10 @@
                     <div class="grid grid-cols-2 gap-8 max-w-md mx-auto mt-16 animate-fade-in-up animate-delay-4">
                         <div class="text-center">
                             <div class="font-heading text-2xl sm:text-3xl font-bold gradient-text">
-                                30+
+                                10+
                             </div>
                             <div class="text-sm text-gray-500 mt-1">
-                                Projects
+                                clients
                             </div>
                         </div>
                         <div class="text-center">
@@ -127,7 +129,7 @@
                                 100%
                             </div>
                             <div class="text-sm text-gray-500 mt-1">
-                                Satisfaction
+                                Satisfiaction
                             </div>
                         </div>
                     </div>
@@ -136,7 +138,7 @@
 
             <!-- Scroll Indicator -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#why-us" class="flex flex-col items-center gap-2 text-gray-500 hover:text-white transition-colors">
+                <a href="#portfolio" class="flex flex-col items-center gap-2 text-gray-500 hover:text-white transition-colors">
                     <span class="text-xs">Scroll</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -144,6 +146,12 @@
                 </a>
             </div>
         </section>
+
+
+
+
+
+
 <!-- ===== TECH STACK MARQUEE – REAL ICONS, NO FRAME, TRANSPARENT ===== -->
 <!-- Paste this IMMEDIATELY AFTER the scroll indicator div and BEFORE <section id="why-us"> -->
 
@@ -300,87 +308,44 @@
 
 <!-- Font Awesome 6 (Free) – for REAL brand icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <!-- Why Choose Us Section -->
-        <section id="why-us" class="relative py-20 sm:py-32">
+
+
+
+
+
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="relative py-20 sm:py-32" style="background: linear-gradient(180deg, rgba(10,10,11,0.2) 0%, rgba(20,20,24,0.8) 100%);">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Section Header -->
-                <div class="text-center mb-16">
-                    <span class="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style="background: rgba(57, 255, 20, 0.1); color: #39ff14;">Why Choose Us</span>
-                    <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Why <span class="gradient-text">DRUNEX</span>?</h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">We combine expertise, innovation, and dedication to deliver exceptional results for every project.</p>
+                <div class="text-center mb-14">
+                    <h2 class="font-heading text-5xl font-bold leading-tight" style="letter-spacing: -0.03em;">Portfolio.</h2>
+                    <p class="mt-4 text-gray-300 text-lg md:text-xl">Selected work. From local businesses to international platforms.</p>
                 </div>
-
-                <!-- Features Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Feature 1 -->
-                    <div class="feature-card p-6 rounded-2xl card-glow transition-all duration-300 hover:scale-105">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(57, 255, 20, 0.1);">
-                            <svg class="w-7 h-7" fill="none" stroke="#39ff14" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="portfolio-card relative rounded-3xl overflow-hidden border border-green-400/20 bg-[#141418] shadow-[0_12px_30px_rgba(0,0,0,0.35)]" data-url="https://example-lawfirm.com">
+                        <a href="https://construction2026.netlify.app/" target="_blank" rel="noopener noreferrer" class="block">
+                            <img data-url="https://construction2026.netlify.app/" alt="Law Firm Project" class="portfolio-image blurred w-full h-64 object-cover" />
+                        </a>
+                        <div class="p-6">
+                            <h3 class="font-heading text-2xl font-bold text-white">Construction Website</h3>
+                            <p class="text-gray-300 mt-2">website for a construction company showcasing completed projects, services, and business trust signals.</p>
                         </div>
-                        <h3 class="font-heading text-lg font-bold mb-2">Client-Focused Solutions</h3>
-                        <p class="text-gray-400 text-sm">We prioritize your vision and requirements, ensuring every deliverable exceeds expectations.</p>
                     </div>
-
-                    <!-- Feature 2 -->
-                    <div class="feature-card p-6 rounded-2xl card-glow transition-all duration-300 hover:scale-105">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(57, 255, 20, 0.1);">
-                            <svg class="w-7 h-7" fill="none" stroke="#39ff14" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
+                    <div class="portfolio-card relative rounded-3xl overflow-hidden border border-green-400/20 bg-[#141418] shadow-[0_12px_30px_rgba(0,0,0,0.35)]" data-url="https://example-construction.com">
+                        <a href="    " target="_blank" rel="noopener noreferrer" class="block">
+                            <img data-url="   " alt="Construction Project" class="portfolio-image blurred w-full h-64 object-cover" />
+                        </a>
+                        <div class="p-6">
+                            <h3 class="font-heading text-2xl font-bold text-white">jewellery Website</h3>
+                            <p class="text-gray-300 mt-2">A modern jewellery website displaying beautiful collections, custom designs, and customer trust with secure and reliable service.</p>
                         </div>
-                        <h3 class="font-heading text-lg font-bold mb-2">Modern UI & Clean Code</h3>
-                        <p class="text-gray-400 text-sm">Built with the latest technologies and best practices for optimal performance and maintainability.</p>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="feature-card p-6 rounded-2xl card-glow transition-all duration-300 hover:scale-105">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(57, 255, 20, 0.1);">
-                            <svg class="w-7 h-7" fill="none" stroke="#39ff14" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-lg font-bold mb-2">Affordable Pricing</h3>
-                        <p class="text-gray-400 text-sm">Premium quality services at competitive prices. Perfect for startups and students.</p>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="feature-card p-6 rounded-2xl card-glow transition-all duration-300 hover:scale-105">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(57, 255, 20, 0.1);">
-                            <svg class="w-7 h-7" fill="none" stroke="#39ff14" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-lg font-bold mb-2">Fast Delivery</h3>
-                        <p class="text-gray-400 text-sm">Quick turnaround times without compromising on quality. Meet your deadlines every time.</p>
-                    </div>
-
-                    <!-- Feature 5 -->
-                    <div class="feature-card p-6 rounded-2xl card-glow transition-all duration-300 hover:scale-105">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(57, 255, 20, 0.1);">
-                            <svg class="w-7 h-7" fill="none" stroke="#39ff14" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-lg font-bold mb-2">WhatsApp Support</h3>
-                        <p class="text-gray-400 text-sm">Direct communication via WhatsApp for instant updates and seamless collaboration.</p>
-                    </div>
-
-                    <!-- Feature 6 -->
-                    <div class="feature-card p-6 rounded-2xl card-glow transition-all duration-300 hover:scale-105">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(57, 255, 20, 0.1);">
-                            <svg class="w-7 h-7" fill="none" stroke="#39ff14" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-lg font-bold mb-2">Quality Guaranteed</h3>
-                        <p class="text-gray-400 text-sm">We stand behind our work with revisions until you're completely satisfied.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+   
         <!-- Services Section -->
         <section id="services" class="relative py-20 sm:py-32" style="background: linear-gradient(180deg, transparent 0%, rgba(20, 20, 24, 0.5) 50%, transparent 100%);">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -403,7 +368,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Website Development</h3>
                         <p class="text-gray-400 text-sm mb-4">Custom websites built with modern frameworks. Responsive, fast, and SEO-optimized.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -420,7 +385,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Python Projects</h3>
                         <p class="text-gray-400 text-sm mb-4">Automation scripts, data analysis, web scraping, APIs, and custom applications.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -437,7 +402,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">AI / ML Projects</h3>
                         <p class="text-gray-400 text-sm mb-4">Machine learning models, neural networks, NLP, computer vision, and predictive analytics.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -454,7 +419,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Website Design</h3>
                         <p class="text-gray-400 text-sm mb-4">Stunning, modern web designs in Figma. Pixel-perfect layouts with design systems.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -471,7 +436,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Logo Design</h3>
                         <p class="text-gray-400 text-sm mb-4">Unique, memorable logos that represent your brand identity perfectly.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -488,7 +453,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Poster / Banner Design</h3>
                         <p class="text-gray-400 text-sm mb-4">Eye-catching posters and banners for events, promotions, and marketing.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -505,7 +470,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Social Media Posters</h3>
                         <p class="text-gray-400 text-sm mb-4">Engaging social media graphics for Instagram, Facebook, LinkedIn, and more.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -522,7 +487,7 @@
                         <h3 class="font-heading text-xl font-bold mb-2">Business Card Design</h3>
                         <p class="text-gray-400 text-sm mb-4">Professional business cards that make lasting first impressions.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -539,10 +504,161 @@
                         <h3 class="font-heading text-xl font-bold mb-2">UI/UX Prototyping</h3>
                         <p class="text-gray-400 text-sm mb-4">Interactive prototypes and wireframes. User research and usability testing.</p>
                         <div class="flex items-center gap-2 text-sm font-medium" style="color: #39ff14;">
-                            <span>Book Your Project</span>
+                            <span>Book Now</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="relative py-20 sm:py-32" style="background: linear-gradient(180deg, rgba(10, 10, 11, 0.2) 0%, rgba(14, 14, 18, 0.8) 100%);">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-5xl font-bold leading-tight" style="letter-spacing: -0.03em;">Pricing.</h2>
+                    <p class="mt-4 text-gray-300 text-lg md:text-xl">Price For Website Development</p>
+                </div>
+
+                <!-- All Pricing Plans & Services Side-by-Side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card p-6 rounded-3xl border border-green-400/20 bg-gradient-to-br from-[#0f1115] via-[#11131a] to-[#10131a]">
+                        <h3 class="font-heading text-3xl font-bold text-white lowercase mb-2">starter</h3>
+                        <p class="text-xs font-semibold uppercase tracking-wide text-green-300 mb-4">Website Development</p>
+                        <div class="mb-6">
+                            <p class="text-4xl font-bold text-white">₹2,999</p>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6">Perfect for getting started online with a professional presence.</p>
+                        <ul class="space-y-2.5 text-gray-300 mb-8 text-sm">
+                            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> 3–5 pages website</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Static design</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Basic UI</li>
+                             <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Contact form</li>
+                            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Mobile responsive</li>
+                        </ul>
+                        <button class="btn-primary w-full py-3 rounded-xl text-sm font-bold text-black flex items-center justify-center gap-2" onclick="openModal('Website Development')">
+                            Get Started <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Standard Plan (Popular) -->
+                    <div class="pricing-card p-6 rounded-3xl border border-blue-300/30 bg-gradient-to-br from-[#11131a] via-[#131522] to-[#11131a] relative">
+                        <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider" style="background: #2a8cff; color: #fff;">popular</div>
+                        <h3 class="font-heading text-3xl font-bold text-white lowercase mb-2">standard</h3>
+                        <p class="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-4">Website Development</p>
+                        <div class="mb-6">
+                            <p class="text-4xl font-bold text-white">₹6,999</p>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6">The perfect start for professional demands.</p>
+                        <ul class="space-y-2.5 text-gray-300 mb-8 text-sm">
+                            <li class="flex items-center gap-2"><span class="text-blue-300">✓</span> 5–10 pages</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-300">✓</span> Responsive design</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-300">✓</span> Contact forms & Automatic emails</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-300">✓</span> Some customization</li>
+                             <li class="flex items-center gap-2"><span class="text-blue-300">✓</span> Live Deployment</li>
+</ul>
+                        
+                        <button class="btn-primary w-full py-3 rounded-xl text-sm font-bold text-black flex items-center justify-center gap-2" onclick="openModal('Website Development')">
+                            Get Started <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="pricing-card p-8 rounded-3xl border border-purple-400/20 bg-gradient-to-br from-[#1a0f1f] via-[#1a131f] to-[#10131a]">
+                        <h3 class="font-heading text-3xl font-bold text-white lowercase mb-2">premium</h3>
+                        <p class="text-xs font-semibold uppercase tracking-wide text-purple-300 mb-4">Website Development</p>
+                        <div class="mb-6">
+                            <p class="text-4xl font-bold text-white">₹11,999</p>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6">Advanced solution for complex projects with full flexibility.</p>
+                        <ul class="space-y-2.5 text-gray-300 mb-8 text-sm">
+                            <li class="flex items-center gap-2"><span style="color: #c084fc;">✓</span> Fully dynamic website</li>
+                            <li class="flex items-center gap-2"><span style="color: #c084fc;">✓</span> Admin panel</li>
+                            <li class="flex items-center gap-2"><span style="color: #c084fc;">✓</span> Database integration</li>
+                            <li class="flex items-center gap-2"><span style="color: #c084fc;">✓</span> Custom features</li>
+                            <li class="flex items-center gap-2"><span style="color: #c084fc;">✓</span> Domain Setup & Live Deployment</li>
+                        </ul>
+                        <button class="btn-primary w-full py-3 rounded-xl text-sm font-bold text-black flex items-center justify-center gap-2" onclick="openModal('Website Development')">
+                            Get Started <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Design Services Details Grid -->
+                <div class="mt-16 pt-12 border-t border-gray-700">
+                    <div class="text-center mb-8">
+
+                          <p class="mt-4 text-gray-300 text-lg md:text-xl">Price For Designs , AI/ML & Python projects </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-heading font-bold text-white text-sm">AI/ML & Python projects</h4>
+                                <p class="text-xl font-bold text-green-400">₹2,999</p>
+                            </div>                            <p class="text-gray-400 text-xs">(Starts from ₹2,999)</p>                        </div>
+                        
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                
+                                <div>
+                                    <h4 class="font-heading font-bold text-white text-sm">Website Design</h4>
+                                    <p class="text-gray-400 text-xs">(Single Page)</p>
+                                </div>
+                                <p class="text-xl font-bold text-green-400">₹499</p>
+                            </div>
+                        </div>
+                        
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-heading font-bold text-white text-sm">UI/UX Prototyping</h4>
+                                <p class="text-xl font-bold text-green-400">₹1,999</p>
+                            </div>
+                        </div>
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-heading font-bold text-white text-sm">Logo Design</h4>
+                                <p class="text-xl font-bold text-green-400">₹500</p>
+                            </div>
+                        </div>
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-heading font-bold text-white text-sm">Poster Design</h4>
+                                    <p class="text-gray-400 text-xs">(For printing extra Charges)</p>
+                                </div>
+                                <p class="text-xl font-bold text-green-400">₹299</p>
+                            </div>
+                        </div>
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-heading font-bold text-white text-sm">Banner Design</h4>
+                                    <p class="text-gray-400 text-xs">(For printing extra Charges)</p>
+                                </div>
+                                <p class="text-xl font-bold text-green-400">₹499</p>
+                            </div>
+                        </div>
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-heading font-bold text-white text-sm">Social Media Posters</h4>
+                                <p class="text-xl font-bold text-green-400">₹200</p>
+                            </div>
+                        </div>
+                        <div class="design-service-card p-5 rounded-2xl border border-gray-600/40 bg-gradient-to-br from-[#11131a] to-[#0f1115]">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                 <h4 class="font-heading font-bold text-white text-sm">Business Cards</h4>
+</div>
+
+<div class="flex items-center gap-2">
+  <p class="text-xl font-bold text-green-400">₹2</p>
+  <p class="text-gray-400 text-xs">(per card)</p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -729,17 +845,19 @@
                     <input type="text" id="fullName" name="fullName" required class="input-field w-full px-4 py-3 rounded-xl text-white" placeholder="Your Name">
                 </div>
 
-                <!-- Phone Number -->
-                <div class="mb-4">
-                    <label for="phone" class="block text-sm font-medium mb-2">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required class="input-field w-full px-4 py-3 rounded-xl text-white" placeholder="+91 XXXXX XXXXX">
-                </div>
-
-                <!-- Email -->
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium mb-2">Email Address *</label>
-                    <input type="email" id="email" name="email" required class="input-field w-full px-4 py-3 rounded-xl text-white" placeholder="yourname@example.com">
-                </div>
+<!-- Phone Number -->
+<div class="mb-4">
+    <label for="phone" class="block text-sm font-medium mb-2">Phone Number *</label>
+    <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        required 
+        class="input-field w-full px-4 py-3 rounded-xl text-white no-arrow"
+        placeholder="+91 XXXXX XXXXX"
+        autocomplete="off"
+    >
+</div>
 
                 <!-- Project Type -->
                 <div class="mb-4">
@@ -747,7 +865,7 @@
                     <select id="projectType" name="projectType" required class="input-field w-full px-4 py-3 rounded-xl text-white appearance-none">
                         <option value="" disabled selected>Select a service</option>
                         <option value="Website Development">Website Development</option>
-                        <option value="Python Projects">Python Projects</option>
+                        <option value="Python Project">Python Project</option>
                         <option value="AI / ML Projects">AI / ML Projects</option>
                         <option value="Website Design">Website Design</option>
                         <option value="Logo Design">Logo Design</option>
@@ -756,7 +874,6 @@
                         <option value="Business Card Design">Business Card Design</option>
                         <option value="UI/UX Prototyping">UI/UX Prototyping</option>
                         <option value="General Inquiry">General Inquiry</option>
-                        <option value="Other">Other (Please specify in description)</option>
                     </select>
                     <!-- Custom dropdown arrow -->
                     <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400" style="transform: translateY(-50%); top: 50%;">
@@ -766,10 +883,48 @@
                     </div>
                 </div>
 
-                <!-- Description -->
+                <!-- Project Description -->
                 <div class="mb-6">
                     <label for="description" class="block text-sm font-medium mb-2">Project Description *</label>
                     <textarea id="description" name="description" required rows="4" class="input-field w-full px-4 py-3 rounded-xl text-white resize-none" placeholder="Describe your project requirements..."></textarea>
+                </div>
+
+                <!-- Budget Range (Web Development only) -->
+                <div id="budget-section" class="mb-6 hidden">
+                    <label class="block text-sm font-medium mb-3">What is your budget range for this website project?</label>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="budget" value="₹3K – ₹5K" class="w-4 h-4">
+                            <span class="text-gray-300">₹3K – ₹5K</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="budget" value="₹5K – ₹10K" class="w-4 h-4">
+                            <span class="text-gray-300">₹5K – ₹10K</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="budget" value="₹10K+" class="w-4 h-4">
+                            <span class="text-gray-300">₹10K+</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Timeline (Web Development only) -->
+                <div id="timeline-section" class="mb-6 hidden">
+                    <label class="block text-sm font-medium mb-3">When do you need the website done?</label>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="timeline" value="2–3 days (Urgent)" class="w-4 h-4">
+                            <span class="text-gray-300">2–3 days (Urgent)</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="timeline" value="1 week" class="w-4 h-4">
+                            <span class="text-gray-300">1 week</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="radio" name="timeline" value="Flexible (No immediate deadline)" class="w-4 h-4">
+                            <span class="text-gray-300">Flexible (No immediate deadline)</span>
+                        </label>
+                    </div>
                 </div>
 
                 <!-- Submit Button -->
@@ -788,8 +943,51 @@
         <div id="toast-container" class="fixed top-24 right-4 z-50 space-y-2"></div>
     </div>
 
+    <script>
+      function normalizeUrl(url) {
+        if (!url) return null;
+        url = url.trim();
+        if (!/^https?:\/\//i.test(url)) {
+          url = 'https://' + url;
+        }
+        return url;
+      }
+
+      function getDomain(url){
+        try { return new URL(url).hostname; } catch(e) { return null; }
+      }
+
+      window.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.portfolio-image').forEach(function(img){
+          var rawUrl = img.getAttribute('data-url');
+          var sourceUrl = normalizeUrl(rawUrl);
+          if (!sourceUrl) return;
+
+          // Primary source: snapshot via mshots (works for any domain/TLD)
+          var screenshotUrl = 'https://s.wordpress.com/mshots/v1/' + encodeURIComponent(sourceUrl) + '?w=960';
+          img.src = screenshotUrl;
+
+          img.onload = function() {
+            img.classList.remove('blurred');
+          };
+
+          img.onerror = function() {
+            // Second fallback: thum.io
+            var thumbUrl = 'https://image.thum.io/get/width/960/crop/480/' + sourceUrl.replace(/^https?:\/\//, '');
+            img.onerror = function() {
+              var domain = getDomain(sourceUrl);
+              if (domain) {
+                img.src = 'https://s2.googleusercontent.com/s2/favicons?sz=256&domain=' + domain;
+              } else {
+                img.src = sourceUrl;
+              }
+            };
+            img.src = thumbUrl;
+          };
+        });
+      });
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
