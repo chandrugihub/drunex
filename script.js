@@ -266,10 +266,26 @@ document.addEventListener('touchmove', function(e) {
 function openModal(serviceType = 'General Inquiry') {
     const modal = document.getElementById('modal');
     const projectTypeField = document.getElementById('projectType');
+    const budgetSection = document.getElementById('budget-section');
+    const timelineSection = document.getElementById('timeline-section');
     
     // Set the selected service type
     if (serviceType && projectTypeField) {
         projectTypeField.value = serviceType;
+    }
+    
+    // Show/hide conditional sections based on service type
+    const isWebDev = serviceType === 'Website Development';
+    if (budgetSection) budgetSection.classList.toggle('hidden', !isWebDev);
+    if (timelineSection) timelineSection.classList.toggle('hidden', !isWebDev);
+    
+    // Add event listener to project type select to toggle sections
+    if (projectTypeField) {
+        projectTypeField.addEventListener('change', function() {
+            const isWebDev = this.value === 'Website Development';
+            if (budgetSection) budgetSection.classList.toggle('hidden', !isWebDev);
+            if (timelineSection) timelineSection.classList.toggle('hidden', !isWebDev);
+        });
     }
     
     modal.classList.remove('hidden');
@@ -283,23 +299,29 @@ function submitForm(event) {
     const form = event.target;
     const fullName = form.fullName.value.trim();
     const phone = form.phone.value.trim();
-    const email = form.email.value.trim();
     const projectType = form.projectType.value;
     const description = form.description.value.trim();
     
-    if (!fullName || !phone || !email || !projectType || !description) {
+    if (!fullName || !phone || !projectType || !description) {
         showToast('Please fill in all required fields', 'error');
         return;
     }
     
-// Create WhatsApp message
-const message = `*New Project Inquiry*\n\n` +
-               `*Name:* ${fullName}\n` +
-               `*Phone:* ${phone}\n` +
-               `*Email:* ${email}\n` +
-               `*Project Type:* ${projectType}\n` +
-               `*Description:* ${description}`;
-
+    // Create WhatsApp message
+    let message = `*New Project Inquiry*\n\n` +
+                   `*Name:* ${fullName}\n` +
+                   `*Phone:* ${phone}\n` +
+                   `*Project Type:* ${projectType}\n` +
+                   `*Description:* ${description}`;
+    
+    // Add budget and timeline if Website Development
+    if (projectType === 'Website Development') {
+        const budget = document.querySelector('input[name="budget"]:checked')?.value || '';
+        const timeline = document.querySelector('input[name="timeline"]:checked')?.value || '';
+        
+        message += `\n\n*Budget Range:* ${budget || 'Not specified'}` +
+                   `\n*Timeline:* ${timeline || 'Not specified'}`;
+    }
     
     // Encode for URL
     const encodedMessage = encodeURIComponent(message);
